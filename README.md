@@ -1,4 +1,4 @@
-# 🚀 LAMP/LEMP Web Stack Installer
+# 🚀 LAMPy - yet another LAMP/LEMP Web Stack Installer
 
 This is a modern, interactive and scriptable installer for quickly setting up a **LAMP** (Apache, MariaDB, PHP) or **LEMP** (Nginx, MariaDB, PHP) stack on **Ubuntu, Debian**, or **Rocky Linux**.
 
@@ -8,11 +8,9 @@ This is a modern, interactive and scriptable installer for quickly setting up a 
 
 - ✅ Apache or Nginx (choose during install or via flag)
 - ✅ Custom PHP version (7.4, 8.1, 8.2, 8.3...)
-- ✅ Required & optional GLPI PHP modules
+- ✅ Required & optional GLPI PHP modules (for GLPI Install)
 - ✅ MariaDB (optional)
 - ✅ phpMyAdmin (optional, manual setup for Rocky)
-- ✅ Remote SQL support
-- ✅ Beautiful CLI UI with spinners & colors
 - ✅ Fully scriptable with CLI arguments
 
 ---
@@ -20,7 +18,7 @@ This is a modern, interactive and scriptable installer for quickly setting up a 
 ## 📦 Quick Start
 
 ```bash
-curl -sSL https://uwu-with.me/s/lamp/v1 | sudo bash
+curl -sSL https://raw.githubusercontent.com/Variiuz/lampy/refs/heads/master/install.sh | sudo bash
 ```
 
 You’ll be prompted interactively to configure your stack.
@@ -32,7 +30,7 @@ You’ll be prompted interactively to configure your stack.
 Skip all prompts using flags:
 
 ```bash
-curl -sSL https://uwu-with.me/s/lamp/v1 | sudo bash -s -- \
+curl -sSL https://raw.githubusercontent.com/Variiuz/lampy/refs/heads/master/install.sh | sudo bash -s -- \
   --web-server apache \
   --php-version 8.2 \
   --install-mariadb \
@@ -61,7 +59,7 @@ curl -sSL https://uwu-with.me/s/lamp/v1 | sudo bash -s -- \
 ### Minimal setup (Nginx + PHP 8.3)
 
 ```bash
-curl -sSL https://uwu-with.me/s/lamp/v1 | sudo bash -s -- \
+curl -sSL https://raw.githubusercontent.com/Variiuz/lampy/refs/heads/master/install.sh | sudo bash -s -- \
   --web-server nginx \
   --php-version 8.3
 ```
@@ -69,7 +67,7 @@ curl -sSL https://uwu-with.me/s/lamp/v1 | sudo bash -s -- \
 ### Full LAMP with GLPI modules
 
 ```bash
-curl -sSL https://uwu-with.me/s/lamp/v1 | sudo bash -s -- \
+curl -sSL https://raw.githubusercontent.com/Variiuz/lampy/refs/heads/master/install.sh | sudo bash -s -- \
   --web-server apache \
   --php-version 8.2 \
   --install-mariadb \
@@ -85,6 +83,8 @@ curl -sSL https://uwu-with.me/s/lamp/v1 | sudo bash -s -- \
 - Ubuntu 20.04, 22.04+
 - Debian 11+
 - Rocky Linux 8/9
+
+- TESTED ON ROCKY 9.5
 
 ---
 
